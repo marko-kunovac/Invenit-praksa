@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+
+:root{
+	--color-grey: #F5F5F5;
+	--color-grey-dark: #C5C6C7;
+    --color-blue-junior: #66FCF1;
+    --color-blue-medior: #55D6BE;
+    --color-blue-senior: #45A29E;
+    --color-blue-dark: #1F2833;
+    --color-purple: #602080;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-blue-senior);
+    height: 80px;
+    align-items: center;
+    padding-inline: 16px;
+    padding-block: 8px;
+}
+
+.logo img{
+    height: 40px;
+    /* margin: 25px 15px; */
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu li{
+    margin: 0 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-grey);
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: var(--color-grey-dark);
+}
+
+.menu-icon{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+.bar{
+    background-color: var(--color-grey);
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.menu-icon:hover .bar{
+    background-color: var(--color-grey-dark);
+}
+
+.menu-items{
+    display: flex;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    list-style-type: none;
+    background-color: var(--color-grey-dark);
+    padding: 10px;
+}
+
+.menu-items > li, a{
+    color: var(--color-blue-dark);
+    text-decoration: none;
+}
+
+.menu-items > li{
+    padding: 4px 8px;
+}
+
+.menu-items > li:hover > a:hover{
+    color: var(--color-blue-senior);
+}
+
+main{
+    padding-top: 100px;
+    background-color: var(--color-blue-dark);
+    color: var(--color-grey);
+    display: flex;
+}
+
+.home-page{
+    display: flex;
+}
+
+.right-column{
+    flex: 1;
+}
+
+.left-column{
+    flex: 1;
+}
+.right-column > img{
+    width: 100%;
+    border: 15px solid var(--color-grey);
+    border-radius: 40px;
+}
