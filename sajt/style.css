@@ -95,12 +95,12 @@ nav {
     top: 80px;
     right: 0;
     list-style-type: none;
-    background-color: var(--color-grey-dark);
+    background-color: var(--color-blue-senior);
     padding: 10px;
 }
 
-.menu-items > li, a {
-    color: var(--color-blue-dark);
+.menu-items > li > a {
+    color: var(--color-grey);
     text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ nav {
 }
 
 .menu-items > li:hover > a:hover {
-    color: var(--color-blue-senior);
+    color: var(--color-grey-dark);
 }
 
 main {
@@ -149,8 +149,9 @@ main {
 
 .right-column > img {
     width: 100%;
-    border: 15px solid var(--color-grey);
+    border: 15px solid var(--color-blue-dark);
     border-radius: 40px;
+    outline: 5px solid var(--color-grey);
 }
 
 main > section > .left-column > a > button {
@@ -162,6 +163,9 @@ main > section > .left-column > a > button {
     border-radius: 40px;
     cursor: pointer;
     font-size: 0.9em;
+    -webkit-box-shadow: 0px 23px 37px -28px rgba(96,32,128,1);
+    -moz-box-shadow: 0px 23px 37px -28px rgba(96,32,128,1);
+    box-shadow: 0px 23px 37px -28px rgba(96,32,128,1);
 }
 
 main > section > .left-column > a > button:hover {
@@ -173,7 +177,7 @@ main > section > .left-column > a > button:hover {
 }
 
 .students {
-    background-color: var(--color-grey-dark);
+    background-color: var(--color-grey);
     width: 100%;
     height: 120vh;
     padding: 30px;
@@ -182,7 +186,9 @@ main > section > .left-column > a > button:hover {
 .students > h1 {
     display: flex;
     justify-content: center;
-    color: var(--color-purple);
+    color: burlywood;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .cards-container {
@@ -216,9 +222,9 @@ main > section > .left-column > a > button:hover {
     /* position: absolute;
     top: 0;
     left: 0; */
-    background-color: var(--color-purple);
+    background-color: burlywood;
     width: 100%;
-    height: 17rem;
+    height: 18rem;
     backface-visibility: hidden; 
     overflow: hidden;
     border-radius: 10px;
@@ -232,22 +238,97 @@ main > section > .left-column > a > button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 17rem;
+    height: 18rem;
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
     text-align: center;
     transform: rotateY(180deg);
-    background-color: var(--color-purple);
+    background-color: burlywood;
     padding: 30px;
     color: var(--color-grey);
 }
 
+.back-side > p {
+    text-align: justify;
+}
+
 .cover > img {
-    width: 200px;
-    height: 150px;
-    border-radius: 30px;
+    width: 190px;
+    height: 170px;
+    border-radius: 50px;
     margin-bottom: 10px;
+}
+
+#o-nama {
+    height: 35rem;
+    background-color: var(--color-blue-dark);
+    color: var(--color-grey);
+    padding: 50px;
+}
+
+#o-nama > hr {
+    margin-bottom: 2.5rem;
+}
+
+#o-nama > h1 {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+#o-nama-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#left-side {
+    margin-top: 4rem;
+    width: 40rem;
+}
+
+#left-side > p {
+    font-size: 1.15rem;
+}
+
+#right-side > img {
+    border: 15px solid var(--color-blue-dark);
+    border-radius: 40px;
+    outline: 5px solid var(--color-grey);
+    height: 20rem;
+    width: 30rem;
+}   
+
+#predavac {
+    background-color: var(--color-grey);
+    color: burlywood;
+    padding: 50px;
+    height: 38rem;
+}
+
+#predavac > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#predavac-content {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#right-predavac {
+    width: 40rem;
+    margin-top: 5rem;
+}
+
+#right-predavac > p {
+    font-size: 1.15rem;
+}
+
+#left-predavac > img {
+    border: 15px solid var(--color-grey);
+    border-radius: 40px;
+    outline: 5px solid burlywood;  
 }
 
 footer {
