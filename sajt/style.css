@@ -370,3 +370,85 @@ footer p {
     width: 300px;
     height: 200px;
 }
+
+@media (width <= 576px) {
+    .home-page {
+        width: 42rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-column {
+        padding-block: 5rem;
+    }
+
+    .right-column {
+        margin-top: -5rem;
+    }
+
+    .right-column > img {
+        width: 30rem;
+        height: 20rem;
+        margin-top: -5rem;
+    }
+
+    .students {
+        width: 42rem;
+        height: 100rem;
+    }
+
+    .card {
+        width: 15rem;
+    }
+
+    #o-nama {
+        width: 42rem;
+        height: 50rem;
+    }
+
+    #o-nama-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left-side {
+        width: 35rem;
+        margin-top: -0.5rem;
+    }
+
+    #right-side > img {
+        width: 35rem;
+        margin-top: 2rem;
+    }
+
+    #predavac {
+        width: 42rem;
+        height: 50rem;
+    }
+
+    #predavac-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #right-predavac {
+        width: 35rem;
+        margin-top: -2rem;
+    }
+
+    #left-predavac {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 42rem;
+    }
+
+    .mapa > iframe {
+        width: 36rem;
+    }
+}
